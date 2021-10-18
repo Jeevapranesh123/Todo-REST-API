@@ -23,12 +23,14 @@ Note: Docker Compose Comes Default with Docker Desktop for Windows and MacOSX
 7. You should be able to see the following response.
 
 ```
-data={
-                "Message":"Hurray you are now connected to MongoDB",
-                "Api_Status":"Up",
-            }
+{
+    "Message":"Hurray you are now connected to MongoDB",
+    "Api_Status":"Up",
+}
 ```
 8. That's it You are Good to go!
 
-9. Head over to Wiki Section of this Repository for API Documentation.
+9. Head over to [Wiki](https://github.com/Jeevapranesh123/Todo-REST-API/wiki) Section of this Repository for API Documentation.
+
+10. Report Bugs to `jeevadev02@gmail.com`
 
