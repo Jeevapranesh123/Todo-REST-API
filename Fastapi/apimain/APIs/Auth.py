@@ -77,5 +77,9 @@ def isvalid(data:Isvalid,response:Response):
 
 @router.get('/test')
 def test(response:Response):
+    print('Hello')
     a=Signup().test()
-    return a
+    return {
+        'Message':a['Message'],
+        'Api_Status':a['Api_Status']
+    }

@@ -13,13 +13,6 @@ app=FastAPI()
 def home():
     return {"Details":"REST API's for a TODO App"}
 
-@app.get('/test')
-def test():
-    try:
-        a=connect()
-        return a
-    except Exception as e:
-        return str(e)
 
 app.include_router(router)
 app.include_router(todoapi)

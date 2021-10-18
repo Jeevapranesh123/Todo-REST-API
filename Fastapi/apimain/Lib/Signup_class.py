@@ -1,9 +1,9 @@
 import pymongo
 import json
-# from apimain.Lib.client import *
+from apimain.Lib.client import *
 
 
-client=pymongo.MongoClient('localhost')
+# client=pymongo.MongoClient('localhost')
 db=client.Intern
 Users=db.Users
 Home=db.Home
@@ -35,18 +35,16 @@ class Signup:
         pass
 
     def test(self):
-
-        a=Home.find_one({"Message":"Hello"})
-        if a:
+        a=Home.find_one({'Message':'Hurray you are now connected to MongoDB and Your API is up. Go Ahead and Use it :)'})
+        if a is not None:
             return a
         else:
             data={
-                "Message":"Hello",
-                "Mongodb":"Connected"
+                "Message":"Hurray you are now connected to MongoDB",
+                "Api_Status":"Up",
             }
             a=Home.insert_one(data)
-
-            x=Home.find_one({'Message':'Hello'})
+            x=Home.find_one({'Message':'Hurray you are now connected to MongoDB'})
             return x
 
 

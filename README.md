@@ -23,9 +23,10 @@ Note: Docker Compose Comes Default with Docker Desktop for Windows and MacOSX
 7. You should be able to see the following response.
 
 ```
-{
-    "Message":"Hurray you are now connected to MongoDB and Your API is up. Go Ahead and Use it :)"
-}
+data={
+                "Message":"Hurray you are now connected to MongoDB",
+                "Api_Status":"Up",
+            }
 ```
 8. That's it You are Good to go!
 
