@@ -1,4 +1,4 @@
-from Lib.Auth_class import Auth
+from apimain.Lib.Auth_class import Auth
 import pymongo
 
 client =pymongo.MongoClient('localhost')

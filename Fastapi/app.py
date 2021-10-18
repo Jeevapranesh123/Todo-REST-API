@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from APIs.Auth import router
-from APIs.TODO import todoapi
+from apimain.APIs.Auth import router
+from apimain.APIs.TODO import todoapi
 
 
 app=FastAPI()

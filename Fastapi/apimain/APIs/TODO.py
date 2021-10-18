@@ -1,10 +1,10 @@
 from fastapi import APIRouter,Response,status,Header,Request
 from typing import Optional
 from pydantic import BaseModel
-from Lib.func import *
-from Lib.Signup_class import *
-from Lib.Auth_class import *
-from Lib.Todo_class import *
+from apimain.Lib.func import *
+from apimain.Lib.Signup_class import *
+from apimain.Lib.Auth_class import *
+from apimain.Lib.Todo_class import *
 
 todoapi = APIRouter()
 
