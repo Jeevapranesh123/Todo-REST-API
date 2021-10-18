@@ -1,11 +1,12 @@
 import pymongo
 import json
-from apimain.Lib.client import *
+# from apimain.Lib.client import *
 
 
-# client=pymongo.MongoClient('localhost')
+client=pymongo.MongoClient('localhost')
 db=client.Intern
 Users=db.Users
+Home=db.Home
 
 
 class Signup:
@@ -27,10 +28,28 @@ class Signup:
                 return False
         else:
             Users.insert_one(data)
+
             return True
 
     def verifytoken(self,username,password):
         pass
+
+    def test(self):
+
+        a=Home.find_one({"Message":"Hello"})
+        if a:
+            return a
+        else:
+            data={
+                "Message":"Hello",
+                "Mongodb":"Connected"
+            }
+            a=Home.insert_one(data)
+
+            x=Home.find_one({'Message':'Hello'})
+            return x
+
+
 
 
 

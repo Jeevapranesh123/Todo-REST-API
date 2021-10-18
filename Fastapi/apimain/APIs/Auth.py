@@ -74,3 +74,8 @@ def isvalid(data:Isvalid,response:Response):
         }
         response.status_code=200
         return data
+
+@router.get('/test')
+def test(response:Response):
+    a=Signup().test()
+    return a
