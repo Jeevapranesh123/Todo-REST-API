@@ -1,8 +1,9 @@
 import pymongo
 import json
+from apimain.Lib.client import *
 
 
-client=pymongo.MongoClient('localhost')
+# client=pymongo.MongoClient('localhost')
 db=client.Intern
 Users=db.Users
 

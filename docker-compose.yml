@@ -1,3 +1,24 @@
-version: "3.9"
+version: '3.8'
 
 services:
+  fastapi:
+    build: ./Fastapi/
+    command: uvicorn app:app --host 0.0.0.0
+    ports:
+      - 8008:8000
+  
+  mongodb:
+    image: mongo:4.0.8
+    container_name: mongodb
+    restart: unless-stopped
+    command: mongod --auth
+    expose : 
+      - 27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass
+      MONGO_INITDB_DATABASE: API
+      MONGODB_DATA_DIR: /data/db
+      MONDODB_LOG_DIR: /dev/null
+    ports :
+      - "27017:27017"

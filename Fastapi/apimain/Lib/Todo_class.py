@@ -2,7 +2,9 @@ import pymongo
 import json
 import pprint
 import time
-client=pymongo.MongoClient('localhost')
+from apimain.Lib.client import *
+
+# client=pymongo.MongoClient('localhost')
 db=client.Intern
 Session=db.Session
 Users=db.Users
