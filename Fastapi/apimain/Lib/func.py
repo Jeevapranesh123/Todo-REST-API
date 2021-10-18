@@ -1,4 +1,3 @@
-import re
 from Lib.Auth_class import Auth
 import pymongo
 

@@ -1,5 +1,3 @@
-import re
-from bson.py3compat import reraise
 import pymongo
 import json
 import pprint
