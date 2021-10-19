@@ -184,7 +184,8 @@ def update_complete_task(data:CompleteTask,request:Request,response:Response):
             a=TODO().complete_task(token,data.taskname.lower())
             data={
                 "Success":1,
-                "Message":"Task Completed"
+                "Message":"Task Completed",
+                "Task_id":a[1]
             }
             response.status_code=200
             return data
@@ -219,7 +220,8 @@ def update_complete_task_by_id(id:int,request:Request,response:Response):
             a=TODO().complete_task(token,id=id)
             data={
                 "Success":1,
-                "Message":"Task Completed"
+                "Message":"Task Completed",
+                "Task_id":a[1]
             }
             response.status_code=200
             return data
