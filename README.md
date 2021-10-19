@@ -34,3 +34,10 @@ Note: Docker Compose Comes Default with Docker Desktop for Windows and MacOSX
 
 10. Report Bugs to `jeevadev02@gmail.com`
 
+## API Testing
+
+1. Find the Postman Export in the repository and Once the Docker Compose is Up Send the Reqests to localhost at port `8008`.
+
+2. Refer to the [Localhost](http://127.0.0.1:8008) for the Documentation
+
+3. Similarly head to [Docs](http://127.0.0.1:8008/docs) for Further Documentation.
