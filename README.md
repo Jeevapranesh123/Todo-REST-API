@@ -18,7 +18,7 @@ Note: Docker Compose Comes Default with Docker Desktop for Windows and MacOSX
 
 5. You should be able to see the Container getting build and once Built you should be able to see the container Logs
 
-6. Once the build is done and the containers are up in running head to [Localhost](http://127.0.0.1:8008) in you Computer Browser or Postman
+6. Once the build is done and the containers are up in running head to [Localhost](http://127.0.0.1:8008/test) in you Computer Browser or Postman
 
 7. You should be able to see the following response.
 
